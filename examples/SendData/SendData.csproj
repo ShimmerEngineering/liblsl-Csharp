@@ -7,6 +7,7 @@
 	<OutputType>Exe</OutputType>
   </PropertyGroup>
    <ItemGroup>
+    <ProjectReference Include="..\..\..\Shimmer-C-API\ShimmerAPI\ShimmerAPI\ShimmerAPI.csproj" />
     <ProjectReference Include="..\..\liblsl.csproj" />
   </ItemGroup>
 </Project>

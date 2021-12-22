@@ -8,5 +8,13 @@
     <DefaultItemExcludes>$(DefaultItemExcludes);examples/**</DefaultItemExcludes>
     <AssemblyName>lsl_csharp</AssemblyName>
   </PropertyGroup>
+  <ItemGroup>
+    <None Remove="lsl.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lsl.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 </Project>
 
