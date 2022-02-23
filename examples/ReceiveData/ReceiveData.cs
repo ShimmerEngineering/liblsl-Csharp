@@ -7,7 +7,7 @@ namespace LSLExamples
         public static void Main(string[] args)
         {
             // wait until an EEG stream shows up
-            StreamInfo[] results = LSL.LSL.resolve_stream("type", "EEG");
+            StreamInfo[] results = LSL.LSL.resolve_stream("type", "Accel");
 
             // open an inlet and print some interesting info about the stream (meta-data, etc.)
             using StreamInlet inlet = new StreamInlet(results[0]);
@@ -15,7 +15,7 @@ namespace LSLExamples
             System.Console.Write(inlet.info().as_xml());
 
             // read samples
-            float[] sample = new float[8];
+            float[] sample = new float[3];
             while (!System.Console.KeyAvailable)
             {
                 inlet.pull_sample(sample);
