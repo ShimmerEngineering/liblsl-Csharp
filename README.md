@@ -4,15 +4,22 @@ The is the C# interface to the lab streaming layer. To use it, you need to inclu
 
 ## Using Visual Studio 2019
 
-* Make sure you have the .NET desktop development pack installed.
+* Make sure you have the .NET desktop development pack installed.*
 * Open the liblsl.sln file. If you are asked to upgrade then go ahead.
+* Make sure you are using shimmer_dev branch
+
+![](img/vs2019_lsl_branch.png)
+
 * Add lsl.dll to your solution.
     * In the solution explorer, right click on the `liblsl` target and choose `Add > Existing Item ...`.
-    * In the new explorer window, change the `Add` dropdown button to `Add as Link` and change the file types/extensions to `all files (*.*)`. Browse to where you have lsl.dll ([previously downloaded from here](https://github.com/sccn/liblsl/releases)) and select it.
+    * In the new explorer window, change the `Add` dropdown button to `Add as Link` and change the file types/extensions to `all files (*.*)`. Browse to where you have lsl.dll, previously downloaded from [releases here](https://github.com/sccn/liblsl/releases), (it can be found in liblsl-1.16.0-Win_amd64.zip file download) and select it.
+
+![](img/vs2019_lsl_addaslink.png)
+
 * Click on the lsl.dll entry now in the solution explorer to view its properties.
 * Set "Build Action" to "Content" and "Copy to Output Directory" to "Copy if newer".
 
-![Visual Studio lsl.dll properties](img/vs2019_lsl_props.PNG)
+![](img/vs2019_lsl_properties.png)
 
 From now on, whenever a target in the solution is built, lsl.dll will be copied into the build directory.
 
