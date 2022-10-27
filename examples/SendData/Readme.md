@@ -12,7 +12,7 @@ Remove the not found project
 
 ![](img/vs2019_lsl_remove.png)
 
-Re-add it again by right click examples -> Add -> Existing Project as shown
+Re-add it again by right click Solution 'liblsl' -> Add -> Existing Project as shown
 
 ![](img/vs2019_lsl_addExisting.png)
 
